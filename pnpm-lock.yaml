@@ -10,6 +10,9 @@ dependencies:
   react-chrono: 1.10.1_react-dom@17.0.1+react@17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-icons: 4.2.0_react@17.0.1
+  react-slick: 0.29.0_react-dom@17.0.1+react@17.0.1
+  reactjs-popup: 2.0.5_react-dom@17.0.1+react@17.0.1
+  slick-carousel: 1.8.1
   styled-components: 5.3.0_react-dom@17.0.1+react@17.0.1
 devDependencies:
   eslint-config-airbnb: 18.2.1
@@ -6188,6 +6191,10 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-Nv9m36S/vxpsI+Hc4/ZGRs0n9mXqSWGGq49zxb/cJfPAQMbUtttJAlNPS4AQzaBdw/pKskw5bMbekT/Y7W/Wlg==
+  /enquire.js/2.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-/KujNpO+PT63F7Hlpu4h3pE3TokKRHN26JYmQpPyjkRD/N57R7bPDNojMXdi7uveAKjYB7yQnartCxZnFWr0Xw==
   /enquirer/2.3.6:
     dependencies:
       ansi-colors: 4.1.3
@@ -9089,6 +9096,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
+  /json2mq/0.2.0:
+    dependencies:
+      string-convert: 0.2.1
+    dev: false
+    resolution:
+      integrity: sha512-SzoRg7ux5DWTII9J2qkrZrqV1gt+rTaoufMxEzXbS26Uid0NwaJd123HcoB80TgubEppxxIGdNxCx50fEoEWQA==
   /json5/1.0.1:
     dependencies:
       minimist: 1.2.7
@@ -9343,7 +9356,6 @@ packages:
     resolution:
       integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==
   /lodash.debounce/4.0.8:
-    dev: true
     resolution:
       integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
   /lodash.memoize/4.1.2:
@@ -11708,6 +11720,21 @@ packages:
         optional: true
     resolution:
       integrity: sha512-S5eO4vjUzUisvkIPB7jVsKtuH2HhWcASREYWHAQ1FP5HyCv3xgn+wpILAEWkmy+A+tTNbSZClhxjT3qz6g4L1A==
+  /react-slick/0.29.0_react-dom@17.0.1+react@17.0.1:
+    dependencies:
+      classnames: 2.3.2
+      enquire.js: 2.1.6
+      json2mq: 0.2.0
+      lodash.debounce: 4.0.8
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+      resize-observer-polyfill: 1.5.1
+    dev: false
+    peerDependencies:
+      react: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    resolution:
+      integrity: sha512-TGdOKE+ZkJHHeC4aaoH85m8RnFyWqdqRfAGkhd6dirmATXMZWAxOpTLmw2Ll/jPTQ3eEG7ercFr/sbzdeYCJXA==
   /react/17.0.1:
     dependencies:
       loose-envify: 1.4.0
@@ -11717,6 +11744,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
+  /reactjs-popup/2.0.5_react-dom@17.0.1+react@17.0.1:
+    dependencies:
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+    dev: false
+    engines:
+      node: '>=10'
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    resolution:
+      integrity: sha512-b5hv9a6aGsHEHXFAgPO5s1Jw1eSkopueyUVxQewGdLgqk2eW0IVXZrPRpHR629YcgIpC2oxtX8OOZ8a7bQJbxA==
   /read-pkg-up/7.0.1:
     dependencies:
       find-up: 4.1.0
@@ -11936,6 +11975,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==
+  /resize-observer-polyfill/1.5.1:
+    dev: false
+    resolution:
+      integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
   /resolve-cwd/2.0.0:
     dependencies:
       resolve-from: 3.0.0
@@ -12501,6 +12544,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-qMCMfhY040cVHT43K9BFygqYbUPFZKHOg7K73mtTWJRb8pyP3fzf4Ixd5SzdEJQ6MRUg/WBnOLxghZtKKurENQ==
+  /slick-carousel/1.8.1:
+    dev: false
+    peerDependencies:
+      jquery: '>=1.8.0'
+    resolution:
+      integrity: sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
   /snapdragon-node/2.1.1:
     dependencies:
       define-property: 1.0.0
@@ -12775,6 +12824,10 @@ packages:
       node: '>=0.6.19'
     resolution:
       integrity: sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==
+  /string-convert/0.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-u/1tdPl4yQnPBjnVrmdLo9gtuLvELKsAoRapekWggdiQNvvvum+jYF329d84NAa660KQw7pB2n36KrIKVoXa3A==
   /string-length/4.0.2:
     dependencies:
       char-regex: 1.0.2
@@ -14295,4 +14348,7 @@ specifiers:
   react-dom: 17.0.1
   react-icons: 4.2.0
   react-scripts: 4.0.3
+  react-slick: 0.29.0
+  reactjs-popup: 2.0.5
+  slick-carousel: 1.8.1
   styled-components: 5.3.0
